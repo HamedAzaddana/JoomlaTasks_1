@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Hamed Show Last Registered Users !</name>
+    <author>Hamed Azad</author>
+    <creationDate>November 2021</creationDate>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>templates@e4j.com</authorEmail>
+    <authorUrl>https://e4j.com</authorUrl>
+    <version>1.0.0</version>
+    <description>This module shows last users in two layouts !</description>
+    <files>
+        <filename module="mod_ha_listusers">mod_ha_listusers.php</filename>
+        <filename>mod_ha_listusers.xml</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>assets</folder>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="cnt_last_users" type="number" label="The number of Users To Show" description="" default="5" filter="integer" class="validate-numeric" />
+                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" validate="moduleLayout" />
+                <field name="image_avatar" type="media" label="avatar image user" description="The image for users slider" />
+            </fieldset>
+        </fields>
+
+    </config>
+</extension>

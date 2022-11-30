@@ -1,0 +1,32 @@
+.mh_no_user {
+    color: red;
+    padding: 10px;
+}
+
+#mod_ha_last_users_default .mh_name {
+    color: blue;
+}
+
+#mod_ha_last_users_default .mh_email {
+    color: green;
+}
+
+#mod_ha_last_users_slider .slick-next:before {
+    content: '→';
+    color: gray !important;
+}
+
+#mod_ha_last_users_slider .slick-prev:before {
+    content: '←';
+    color: gray !important;
+}
+
+#mod_ha_last_users_slider img {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+}
+
+#mod_ha_last_users_slider .mha_card_user {
+    text-align: center;
+}

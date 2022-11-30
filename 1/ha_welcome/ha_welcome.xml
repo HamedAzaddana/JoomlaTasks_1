@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="user" method="upgrade">
+	<name>Welcome Users Hamed!</name>
+	<author>Hamed Azad</author>
+	<creationDate>November 2022</creationDate>
+	<copyright>Copyright (C) 2022 - 2020 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>This plugin welcomes after login !</description>
+	<files>
+		<filename plugin="ha_welcome">ha_welcome.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="welcome_method"
+					type="list"
+					label="Welcome Method"
+					description="The Style To Show Welcome"
+					default="toast"
+					>
+					<option value="toast">Toast</option>
+					<option value="swal">Sweet Alert</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
